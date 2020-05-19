@@ -20,5 +20,12 @@
     "url": "https://github.com/eKulshan/frontend-project-lvl1/issues"
   },
   "homepage": "https://github.com/eKulshan/frontend-project-lvl1#readme",
-  "dependencies": {}
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
 }
