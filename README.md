@@ -1,2 +1,3 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 ![.github/workflows/lintOnPush.yml](https://github.com/eKulshan/frontend-project-lvl1/workflows/.github/workflows/lintOnPush.yml/badge.svg)
+[![asciicast](https://asciinema.org/a/xmdQvtAnStMdZqSBr5F4BP6OO.svg)](https://asciinema.org/a/xmdQvtAnStMdZqSBr5F4BP6OO)
