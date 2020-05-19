@@ -19,10 +19,6 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: npm install, build
-        # Install and build project
-        run: |
-          make install
+      run: make install
     - name: Run Linter
-        # Runs a Eslint when push commit
-        run: |
-          make lint
+      run: make lint
