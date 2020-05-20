@@ -2,16 +2,16 @@
 
 import readlineSync from 'readline-sync';
 import greeting from '../src/greeting.js';
-import getRandomInRange from '../src/getRandomInRange.js';
+import brainEven from '../games/brainEven.js';
+import brainCalc from '../games/brainCalc.js';
 
-const name = greeting();
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const games = [brainEven, brainCalc]; // Array of available games
+const playerName = greeting();
+const gameIndex = readlineSync.keyInSelect(['BrainEven', 'BrainCalc'], 'Which game would you like to play?'); // Choose a game to play
+
 let correctAnswersCount = 0;
-
 while (correctAnswersCount < 3) {
-  const number = getRandomInRange(1, 100);
-  const correctAnswer = number % 2 === 0 ? 'yes' : 'no';
-  console.log(`Question: ${number}`);
+  const correctAnswer = (games[gameIndex])();
   const playerAnswer = readlineSync.question('Your answer: ');
 
   if (playerAnswer === correctAnswer) {
@@ -19,10 +19,10 @@ while (correctAnswersCount < 3) {
     correctAnswersCount += 1;
   } else if (playerAnswer !== correctAnswer) {
     console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".
-Let's try again, ${name}!`);
+Let's try again, ${playerName}!`);
     break;
   }
 }
 if (correctAnswersCount === 3) {
-  console.log(`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${playerName}!`);
 }

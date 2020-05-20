@@ -2,4 +2,6 @@
 
 ![lintOnPush](https://github.com/eKulshan/frontend-project-lvl1/workflows/.github/workflows/lintOnPush.yml/badge.svg)
 
-[![asciicast](https://asciinema.org/a/xmdQvtAnStMdZqSBr5F4BP6OO.svg)](https://asciinema.org/a/xmdQvtAnStMdZqSBr5F4BP6OO)
+[![brainEven](https://asciinema.org/a/xmdQvtAnStMdZqSBr5F4BP6OO.svg)](https://asciinema.org/a/xmdQvtAnStMdZqSBr5F4BP6OO)
+
+[![brainCalc](https://asciinema.org/a/CcCMw3Db1OZThQ4Jd1x4UsR5z.svg)](https://asciinema.org/a/CcCMw3Db1OZThQ4Jd1x4UsR5z)

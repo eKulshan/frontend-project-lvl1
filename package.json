@@ -2,8 +2,7 @@
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
   "bin": {
-    "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brainGames": "bin/brainGames.js"
   },
   "description": "hexletFirstProject",
   "type": "module",
