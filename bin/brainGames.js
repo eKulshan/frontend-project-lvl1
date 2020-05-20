@@ -4,10 +4,13 @@ import readlineSync from 'readline-sync';
 import greeting from '../src/greeting.js';
 import brainEven from '../games/brainEven.js';
 import brainCalc from '../games/brainCalc.js';
+import brainGcd from '../games/brainGcd.js';
+import gamesRules from '../games/gamesRules.js';
 
-const games = [brainEven, brainCalc]; // Array of available games
-const playerName = greeting();
-const gameIndex = readlineSync.keyInSelect(['BrainEven', 'BrainCalc'], 'Which game would you like to play?'); // Choose a game to play
+const games = [brainEven, brainCalc, brainGcd]; // Array of available games
+const playerName = greeting(); // Greets player and gets his name
+const gameIndex = readlineSync.keyInSelect(['BrainEven', 'BrainCalc', 'BrainGCD'], 'Which game would you like to play?'); // Choose a game to play
+console.log(gamesRules[gameIndex]); // On game run declare game rules
 
 let correctAnswersCount = 0;
 while (correctAnswersCount < 3) {
