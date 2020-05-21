@@ -9,3 +9,5 @@ BrainGcdDemo
 [![brainGcd](https://asciinema.org/a/UCN3Yzh7wKjrdR7FKnhFiJtp5.svg)](https://asciinema.org/a/UCN3Yzh7wKjrdR7FKnhFiJtp5)
 BrainProgressionDemo
 [![brainProgression](https://asciinema.org/a/82QyspH0rLBFTJRAwQNjLSEJp.svg)](https://asciinema.org/a/82QyspH0rLBFTJRAwQNjLSEJp)
+BrainIsPrime
+[![brainIsPrime](https://asciinema.org/a/xeBoCymQ11SfR1AYYngZskzwK.svg)](https://asciinema.org/a/xeBoCymQ11SfR1AYYngZskzwK)
