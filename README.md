@@ -1,6 +1,5 @@
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>![lintOnPush](https://github.com/eKulshan/frontend-project-lvl1/workflows/lintOnPush/badge.svg)
 
-![lintOnPush](https://github.com/eKulshan/frontend-project-lvl1/workflows/lintOnPush/badge.svg)
 BrainEvenDemo
 [![brainEven](https://asciinema.org/a/iln3yvwNBOlTqSJ16Yzly7Q7W.svg)](https://asciinema.org/a/iln3yvwNBOlTqSJ16Yzly7Q7W)
 BrainCalcDemo
