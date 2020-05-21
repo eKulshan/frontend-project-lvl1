@@ -11,7 +11,8 @@ const brainGcdRule = 'Find the greatest common divisor of given numbers.';
 const brainProgressionRule = 'What number is missing in the progression?';
 const brainIsPrimeRule = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
-export const gamesRules = [brainEvenRule, brainCalcRule, brainGcdRule, brainProgressionRule, brainIsPrimeRule];
+export const gamesRules = [brainEvenRule, brainCalcRule,
+  brainGcdRule, brainProgressionRule, brainIsPrimeRule];
 
 // Array of available games
 export const games = [brainEven, brainCalc, brainGcd, brainProgression, brainIsPrime];
