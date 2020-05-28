@@ -7,7 +7,6 @@
     "brainGcd": "bin/brainGcd.js",
     "brainProgression": "bin/brainProgression.js",
     "brainPrime": "bin/brainPrime.js"
-    
   },
   "description": "hexletFirstProject",
   "type": "module",

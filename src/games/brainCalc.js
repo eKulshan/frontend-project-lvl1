@@ -1,10 +1,7 @@
+import runBrainGames from '../index.js';
 import getRandomInRange from '../getRandomInRange.js';
 
-const calc = () => {
-  const operators = ['+', '-', '*'];
-  const operator = operators[getRandomInRange(0, 2)];
-  const num1 = getRandomInRange(0, 100);
-  const num2 = getRandomInRange(0, 100);
+const calc = (num1, num2, operator) => {
   const expression = (`${num1} ${operator} ${num2} = ?`);
   let answer = 0;
 
@@ -23,13 +20,19 @@ const calc = () => {
   return [expression, answer];
 };
 
+const gameRule = 'What is the result of the expression?';
+const gameRounds = 3;
+
 const brainCalc = () => {
-  const gameRule = 'What is the result of the expression?';
-  const gameTerms = calc();
+  const operators = ['+', '-', '*'];
+  const gameTerms = calc(getRandomInRange(0, 100),
+    getRandomInRange(0, 100), operators[getRandomInRange(0, 2)]);
   const question = (gameTerms[0]);
   const correctAnswer = `${gameTerms[1]}`;
 
-  return [gameRule, question, correctAnswer];
+  return [question, correctAnswer];
 };
 
-export default brainCalc;
+const runBrainCalc = () => runBrainGames(brainCalc, gameRounds, gameRule);
+
+export default runBrainCalc;

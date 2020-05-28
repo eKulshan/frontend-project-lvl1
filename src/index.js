@@ -1,27 +1,26 @@
 import readlineSync from 'readline-sync';
 import greeting from './greeting.js';
 
-const brainGames = (game) => {
+const runBrainGames = (game, gameRounds, gameRule) => {
   const playerName = greeting(); // Greets player and gets his name
-  const gameRules = (game())[0];
-  console.log(gameRules); // On game run declare game rules
-  const answersToWin = 3; // Define how many correct answers player must give to win the game
+  console.log(gameRule); // On game run declare game rules
+  const answersToWin = gameRounds; // Define how many correct answers player must give to win
   let correctAnswersCount = 0; // Counts player correct answers
 
   while (correctAnswersCount < answersToWin) {
     const gameTerms = game();
-    const question = (gameTerms[1]);
+    const question = (gameTerms[0]);
     console.log(question); // Declare game question
-    const correctAnswer = (gameTerms[2]); // Gets correct answer from chosen game
+    const correctAnswer = (gameTerms[1]); // Gets correct answer from chosen game
     const playerAnswer = readlineSync.question('Your answer: '); // Gets player answer
 
     if (playerAnswer === correctAnswer) { // Compare correct and player answers
       console.log('Correct!');
       correctAnswersCount += 1;
-    } else if (playerAnswer !== correctAnswer) {
+    } else {
       console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".
 Let's try again, ${playerName}!`);
-      break;
+      return;
     }
   }
   if (correctAnswersCount === answersToWin) {
@@ -29,4 +28,4 @@ Let's try again, ${playerName}!`);
   }
 };
 
-export default brainGames;
+export default runBrainGames;

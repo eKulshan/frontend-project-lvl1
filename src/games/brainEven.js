@@ -1,18 +1,22 @@
+import runBrainGames from '../index.js';
 import getRandomInRange from '../getRandomInRange.js';
 
-const isEven = () => {
-  const num = getRandomInRange(1, 100);
+const isEven = (num) => {
   const answer = num % 2 === 0 ? 'yes' : 'no';
   return [num, answer];
 };
 
+const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
+const gameRounds = 3;
 
 const brainEven = () => {
-  const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
-  const gameTerms = isEven();
+  const gameTerms = isEven(getRandomInRange(1, 100));
   const question = `Question: ${gameTerms[0]}`;
   const correctAnswer = `${gameTerms[1]}`;
 
-  return [gameRule, question, correctAnswer];
+  return [question, correctAnswer];
 };
-export default brainEven;
+
+const runBrainEven = () => runBrainGames(brainEven, gameRounds, gameRule);
+
+export default runBrainEven;
