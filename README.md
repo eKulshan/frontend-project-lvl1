@@ -18,5 +18,5 @@ After game installing you can run games by typing game names in command line
 [![brainGcd]](https://asciinema.org/a/UCN3Yzh7wKjrdR7FKnhFiJtp5)
 #### BrainProgressionDemo
 [![brainProgression]](https://asciinema.org/a/82QyspH0rLBFTJRAwQNjLSEJp)
-#### BrainIsPrime
-[![brainIsPrime](https://asciinema.org/a/xeBoCymQ11SfR1AYYngZskzwK)
+#### BrainIsPrimeDemo
+[![brainIsPrime]](https://asciinema.org/a/xeBoCymQ11SfR1AYYngZskzwK)
