@@ -13,20 +13,20 @@ const isPrime = (num) => {
     }
     divisor += 1;
   }
-  return [num, answer === true ? 'yes' : 'no'];
+  return answer;
 };
 
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const gameRounds = 3;
+const answersToWin = 3;
 
 const brainIsPrime = () => {
-  const gameTerms = isPrime(getRandomInRange(0, 100));
-  const question = `Question: ${gameTerms[0]}`;
-  const correctAnswer = `${gameTerms[1]}`;
+  const num = getRandomInRange(1, 100);
+  const question = `Question: ${num}`;
+  const correctAnswer = `${isPrime(num) === true ? 'yes' : 'no'}`;
 
   return [question, correctAnswer];
 };
 
-const runBrainPrime = () => runBrainGames(brainIsPrime, gameRounds, gameRule);
+const runBrainPrime = () => runBrainGames(brainIsPrime, answersToWin, gameRule);
 
 export default runBrainPrime;

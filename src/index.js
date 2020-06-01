@@ -1,17 +1,14 @@
 import readlineSync from 'readline-sync';
-import greeting from './greeting.js';
 
-const runBrainGames = (game, gameRounds, gameRule) => {
-  const playerName = greeting(); // Greets player and gets his name
+const runBrainGames = (runGame, answersToWin, gameRule) => {
+  console.log('Welcome to the Brain Games!');
+  const playerName = readlineSync.question('May I have your name? ');
   console.log(gameRule); // On game run declare game rules
-  const answersToWin = gameRounds; // Define how many correct answers player must give to win
   let correctAnswersCount = 0; // Counts player correct answers
 
   while (correctAnswersCount < answersToWin) {
-    const gameTerms = game();
-    const question = (gameTerms[0]);
+    const [question, correctAnswer] = runGame();
     console.log(question); // Declare game question
-    const correctAnswer = (gameTerms[1]); // Gets correct answer from chosen game
     const playerAnswer = readlineSync.question('Your answer: '); // Gets player answer
 
     if (playerAnswer === correctAnswer) { // Compare correct and player answers
@@ -23,9 +20,7 @@ Let's try again, ${playerName}!`);
       return;
     }
   }
-  if (correctAnswersCount === answersToWin) {
-    console.log(`Congratulations, ${playerName}!`);
-  }
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export default runBrainGames;

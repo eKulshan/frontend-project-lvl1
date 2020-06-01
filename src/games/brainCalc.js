@@ -1,11 +1,8 @@
 import runBrainGames from '../index.js';
 import getRandomInRange from '../getRandomInRange.js';
 
-const calc = (num1, num2, operator) => {
-  const expression = (`${num1} ${operator} ${num2} = ?`);
+const calculateExpression = (num1, num2, operator) => {
   let answer = 0;
-
-  // eslint-disable-next-line default-case
   switch (operator) {
     case '+':
       answer = num1 + num2;
@@ -16,23 +13,26 @@ const calc = (num1, num2, operator) => {
     case '*':
       answer = num1 * num2;
       break;
+    default:
+      answer = 'Wrong opetator!';
   }
-  return [expression, answer];
+  return [answer];
 };
 
 const gameRule = 'What is the result of the expression?';
-const gameRounds = 3;
+const answersToWin = 3;
 
 const brainCalc = () => {
+  const num1 = getRandomInRange(0, 100);
+  const num2 = getRandomInRange(0, 100);
   const operators = ['+', '-', '*'];
-  const gameTerms = calc(getRandomInRange(0, 100),
-    getRandomInRange(0, 100), operators[getRandomInRange(0, 2)]);
-  const question = (gameTerms[0]);
-  const correctAnswer = `${gameTerms[1]}`;
+  const operator = operators[getRandomInRange(0, 2)];
+  const question = (`${num1} ${operator} ${num2} = ?`);
+  const correctAnswer = `${calculateExpression(num1, num2, operator)}`;
 
   return [question, correctAnswer];
 };
 
-const runBrainCalc = () => runBrainGames(brainCalc, gameRounds, gameRule);
+const runBrainCalc = () => runBrainGames(brainCalc, answersToWin, gameRule);
 
 export default runBrainCalc;
