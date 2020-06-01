@@ -12,7 +12,7 @@ const answersToWin = 3;
 const brainGcd = () => {
   const num1 = getRandomInRange(1, 100);
   const num2 = getRandomInRange(1, 100);
-  const question = `Question: ${num1} ${num2}`;
+  const question = `${num1} ${num2}`;
   const correctAnswer = `${getGcd(num1, num2)}`;
 
   return [question, correctAnswer];

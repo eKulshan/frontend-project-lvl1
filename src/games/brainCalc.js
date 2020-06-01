@@ -27,7 +27,7 @@ const brainCalc = () => {
   const num2 = getRandomInRange(0, 100);
   const operators = ['+', '-', '*'];
   const operator = operators[getRandomInRange(0, 2)];
-  const question = (`${num1} ${operator} ${num2} = ?`);
+  const question = (`${num1} ${operator} ${num2} `);
   const correctAnswer = `${calculateExpression(num1, num2, operator)}`;
 
   return [question, correctAnswer];

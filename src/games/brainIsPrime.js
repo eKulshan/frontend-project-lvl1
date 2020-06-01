@@ -21,8 +21,8 @@ const answersToWin = 3;
 
 const brainIsPrime = () => {
   const num = getRandomInRange(1, 100);
-  const question = `Question: ${num}`;
-  const correctAnswer = `${isPrime(num) === true ? 'yes' : 'no'}`;
+  const question = `${num}`;
+  const correctAnswer = `${isPrime(num) ? 'yes' : 'no'}`;
 
   return [question, correctAnswer];
 };

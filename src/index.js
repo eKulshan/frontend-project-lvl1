@@ -8,7 +8,7 @@ const runBrainGames = (runGame, answersToWin, gameRule) => {
 
   while (correctAnswersCount < answersToWin) {
     const [question, correctAnswer] = runGame();
-    console.log(question); // Declare game question
+    console.log(`Question: ${question}`); // Declare game question
     const playerAnswer = readlineSync.question('Your answer: '); // Gets player answer
 
     if (playerAnswer === correctAnswer) { // Compare correct and player answers
