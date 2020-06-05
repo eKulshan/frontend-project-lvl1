@@ -2,11 +2,14 @@ import runBrainGames from '../index.js';
 import getRandomInRange from '../getRandomInRange.js';
 
 const getProgression = (progressionBeginning, progressionInterval, progressionLength) => {
-  const progression = [progressionBeginning]; // Create progression
+  const progression = [];
 
-  while (progression.length <= progressionLength) { // Fill the progression in cycle
-    progression.push(progression[progression.length - 1] + progressionInterval);
+  for (
+    let i = progressionBeginning; progression.length <= progressionLength; i += progressionInterval
+  ) {
+    progression.push(i);
   }
+
   return progression;
 };
 

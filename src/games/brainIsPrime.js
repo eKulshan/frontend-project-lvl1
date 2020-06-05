@@ -5,9 +5,10 @@ const isPrime = (num) => {
   let answer = true;
   if (num < 2) {
     answer = false;
+    return answer;
   }
   let divisor = 2;
-  while (divisor <= num) {
+  while (divisor <= num / 2) {
     if (num % divisor === 0 && num !== divisor) {
       answer = false;
     }

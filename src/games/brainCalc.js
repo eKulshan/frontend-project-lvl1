@@ -2,21 +2,12 @@ import runBrainGames from '../index.js';
 import getRandomInRange from '../getRandomInRange.js';
 
 const calculateExpression = (num1, num2, operator) => {
-  let answer = 0;
   switch (operator) {
-    case '+':
-      answer = num1 + num2;
-      break;
-    case '-':
-      answer = num1 - num2;
-      break;
-    case '*':
-      answer = num1 * num2;
-      break;
-    default:
-      answer = 'Wrong opetator!';
+    case '+': return num1 + num2;
+    case '-': return num1 - num2;
+    case '*': return num1 * num2;
+    default: throw new Error('Wrong expression operator!');
   }
-  return [answer];
 };
 
 const gameRule = 'What is the result of the expression?';
