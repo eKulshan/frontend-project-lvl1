@@ -4,8 +4,8 @@ import getRandomInRange from '../getRandomInRange.js';
 const getProgression = (progressionBeginning, progressionInterval, progressionLength) => {
   const progression = [];
 
-  for (let i = 1; i <= progressionLength; i += 1) {
-    progression.push(progressionBeginning + (i - 1) * progressionInterval);
+  for (let i = 0; i <= progressionLength; i += 1) {
+    progression.push(progressionBeginning + i * progressionInterval);
   }
 
   return progression;
