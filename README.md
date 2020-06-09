@@ -12,12 +12,12 @@ After game installing you can run games by typing game names in command line
 
 
 #### BrainEvenDemo
-[![brainEven]](https://asciinema.org/a/iln3yvwNBOlTqSJ16Yzly7Q7W)
+[![asciicast](https://asciinema.org/a/NKbI5P2UBo7oecclYMXAftqGR.svg)](https://asciinema.org/a/NKbI5P2UBo7oecclYMXAftqGR)
 #### BrainCalcDemo
-[![brainCalc]](https://asciinema.org/a/CcCMw3Db1OZThQ4Jd1x4UsR5z)
+[![asciicast](https://asciinema.org/a/UGp7mjhcsY2xhAovj9G1VXQMu.svg)](https://asciinema.org/a/UGp7mjhcsY2xhAovj9G1VXQMu)
 #### BrainGcdDemo
-[![brainGcd]](https://asciinema.org/a/UCN3Yzh7wKjrdR7FKnhFiJtp5)
+[![asciicast](https://asciinema.org/a/0bFcA7VMKrnJcqMSHutCV99sI.svg)](https://asciinema.org/a/0bFcA7VMKrnJcqMSHutCV99sI)
 #### BrainProgressionDemo
-[![brainProgression]](https://asciinema.org/a/82QyspH0rLBFTJRAwQNjLSEJp)
+[![asciicast](https://asciinema.org/a/VcARFqq6PPEUXwESPAbb1mrgt.svg)](https://asciinema.org/a/VcARFqq6PPEUXwESPAbb1mrgt)
 #### BrainIsPrimeDemo
-[![brainIsPrime]](https://asciinema.org/a/xeBoCymQ11SfR1AYYngZskzwK)
+[![asciicast](https://asciinema.org/a/ZFoUAQ9pGhl1z06eOZSNSAqo0.svg)](https://asciinema.org/a/ZFoUAQ9pGhl1z06eOZSNSAqo0)
