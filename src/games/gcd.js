@@ -7,9 +7,8 @@ const getGcd = (num1, num2) => {
 };
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
-const answersToWin = 3;
 
-const brainGcd = () => {
+const makeBrainGcd = () => {
   const num1 = getRandomInRange(1, 100);
   const num2 = getRandomInRange(1, 100);
   const question = `${num1} ${num2}`;
@@ -18,6 +17,6 @@ const brainGcd = () => {
   return [question, correctAnswer];
 };
 
-const runBrainGcd = () => runBrainGames(brainGcd, answersToWin, gameRule);
+const runBrainGcd = () => runBrainGames(makeBrainGcd, gameRule);
 
 export default runBrainGcd;

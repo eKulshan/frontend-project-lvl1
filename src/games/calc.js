@@ -11,19 +11,18 @@ const calculateExpression = (num1, num2, operator) => {
 };
 
 const gameRule = 'What is the result of the expression?';
-const answersToWin = 3;
 
-const brainCalc = () => {
+const makeBrainCalc = () => {
   const num1 = getRandomInRange(0, 100);
   const num2 = getRandomInRange(0, 100);
   const operators = ['+', '-', '*'];
-  const operator = operators[getRandomInRange(0, 2)];
-  const question = (`${num1} ${operator} ${num2} `);
-  const correctAnswer = `${calculateExpression(num1, num2, operator)}`;
+  const operator = operators[getRandomInRange(0, operators.length - 1)];
+  const question = (`${num1} ${operator} ${num2}`);
+  const correctAnswer = String(calculateExpression(num1, num2, operator));
 
   return [question, correctAnswer];
 };
 
-const runBrainCalc = () => runBrainGames(brainCalc, answersToWin, gameRule);
+const runBrainCalc = () => runBrainGames(makeBrainCalc, gameRule);
 
 export default runBrainCalc;

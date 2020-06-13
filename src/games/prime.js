@@ -16,9 +16,8 @@ const isPrime = (num) => {
 };
 
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const answersToWin = 3;
 
-const brainIsPrime = () => {
+const makeBrainIsPrime = () => {
   const num = getRandomInRange(1, 100);
   const question = `${num}`;
   const correctAnswer = `${isPrime(num) ? 'yes' : 'no'}`;
@@ -26,6 +25,6 @@ const brainIsPrime = () => {
   return [question, correctAnswer];
 };
 
-const runBrainPrime = () => runBrainGames(brainIsPrime, answersToWin, gameRule);
+const runBrainPrime = () => runBrainGames(makeBrainIsPrime, gameRule);
 
 export default runBrainPrime;
