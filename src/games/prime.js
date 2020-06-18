@@ -18,9 +18,8 @@ const isPrime = (num) => {
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const makeBrainIsPrime = () => {
-  const num = getRandomInRange(0, 100);
-  const question = num;
-  const correctAnswer = isPrime(num) ? 'yes' : 'no';
+  const question = getRandomInRange(0, 100);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
 
   return [question, correctAnswer];
 };
