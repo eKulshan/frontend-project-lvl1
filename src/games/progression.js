@@ -14,12 +14,12 @@ const getProgression = (begining, interval, length) => {
 const gameRule = 'What number is missing in the progression?';
 
 const makeBrainProgression = () => {
-  const progressionBeginning = getRandomInRange(1, 100);
-  const progressionInterval = getRandomInRange(1, 100);
+  const progressionBeginning = getRandomInRange(0, 100);
+  const progressionInterval = getRandomInRange(0, 100);
   const progressionLength = 10;
   const progression = getProgression(progressionBeginning, progressionInterval, progressionLength);
-  const askedNumIndex = getRandomInRange(0, progression.length - 1);
-  const correctAnswer = `${progression[askedNumIndex]}`; // Memorizing number to ask
+  const askedNumIndex = getRandomInRange(0, progressionLength - 1);
+  const correctAnswer = String(progression[askedNumIndex]); // Memorizing number to ask
   progression[askedNumIndex] = '..'; // Hide number to ask
   const question = progression.join(' ');
 
